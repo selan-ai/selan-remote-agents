@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="30" y="38" font-size="20" font-weight="600" fill="#0f172a">The shape of an agent prompt</text>
+
+  <g font-size="13" fill="#334155">
+    <rect x="30" y="60" width="170" height="50" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="46" y="90" font-size="14" font-weight="600" fill="#1e3a8a">Role</text>
+    <rect x="210" y="60" width="660" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="226" y="90">"You deploy to prod. Nothing else: no fixes, no retries, no log reading."</text>
+
+    <rect x="30" y="116" width="170" height="50" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="46" y="146" font-size="14" font-weight="600" fill="#1e3a8a">Schedule</text>
+    <rect x="210" y="116" width="660" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="226" y="146">"Every hour, 08:00–18:00. The next run sees what this one skipped."</text>
+
+    <rect x="30" y="172" width="170" height="50" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="46" y="202" font-size="14" font-weight="600" fill="#1e3a8a">Memory</text>
+    <rect x="210" y="172" width="660" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="226" y="202">"Keep each handoff and its state; drop it once verified."</text>
+
+    <rect x="30" y="228" width="170" height="50" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="46" y="258" font-size="14" font-weight="600" fill="#1e3a8a">Tools</text>
+    <rect x="210" y="228" width="660" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="226" y="258">"GitLab MCP, and Slack for the report. Never print credentials."</text>
+
+    <rect x="30" y="284" width="170" height="84" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="46" y="314" font-size="14" font-weight="600" fill="#065f46">Steps</text>
+    <text x="46" y="334" font-size="12" fill="#047857">numbered, same order</text>
+    <text x="46" y="350" font-size="12" fill="#047857">in every agent</text>
+    <rect x="210" y="284" width="660" height="84" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="226" y="310">1 Follow up first · 2 Look · 3 Choose: a bar, and a cap per run</text>
+    <text x="226" y="332">4 Act: the smallest change, with a test that fails without it</text>
+    <text x="226" y="354">5 Verify: pipeline, review, merge, deploy, error logs; revert if they rise</text>
+
+    <rect x="30" y="374" width="170" height="50" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="46" y="404" font-size="14" font-weight="600" fill="#1e3a8a">Report</text>
+    <rect x="210" y="374" width="660" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="226" y="404">"One Slack message, at most 4 lines, only when something happened."</text>
+
+    <rect x="30" y="430" width="170" height="50" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="46" y="460" font-size="14" font-weight="600" fill="#1e3a8a">Final answer</text>
+    <rect x="210" y="430" width="660" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="226" y="460">"What you followed up, what you chose and why, run ids, what needs a person."</text>
+  </g>
+</svg>

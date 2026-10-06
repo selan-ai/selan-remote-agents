@@ -1,0 +1,13 @@
+{
+  "name": "selan-remote-agents",
+  "description": "Run a team of autonomous Selan remote agents that keep a product healthy without a person watching: how to design each agent, wake it, hand work between agents, ask a person only what needs hands, and audit the fleet you already have.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Selan",
+    "url": "https://selan.ai"
+  },
+  "homepage": "https://selan.ai",
+  "repository": "https://github.com/selan-ai/selan-remote-agents",
+  "license": "MIT",
+  "keywords": ["remote-agents", "reactor", "autonomous-agents", "agent-ops", "selan"]
+}

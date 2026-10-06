@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="340" fill="#ffffff"/>
+  <text x="30" y="40" font-size="20" font-weight="600" fill="#0f172a">When an agent needs a person</text>
+
+  <rect x="30" y="62" width="940" height="38" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="500" y="86" font-size="13" text-anchor="middle" fill="#334155">Most agents never ask: they fix it, hand code to the coder, or pick other work. Only a few may ask, and only for hands.</text>
+
+  <g font-size="12" fill="#92400e">
+    <rect x="30" y="130" width="170" height="116" rx="8" fill="#fffbeb" stroke="#d97706"/>
+    <text x="46" y="156" font-size="14" font-weight="600" fill="#78350f">1 · Blocked</text>
+    <text x="46" y="180">the job needs a person's</text>
+    <text x="46" y="198">hands: a credential,</text>
+    <text x="46" y="216">a sign-in, an access</text>
+
+    <rect x="222" y="130" width="170" height="116" rx="8" fill="#fffbeb" stroke="#d97706"/>
+    <text x="238" y="156" font-size="14" font-weight="600" fill="#78350f">2 · One issue</text>
+    <text x="238" y="180">labels agent-question</text>
+    <text x="238" y="198">and agent: &lt;name&gt;,</text>
+    <text x="238" y="216">a run: line, and</text>
+    <text x="238" y="234">a fingerprint: line</text>
+
+    <rect x="414" y="130" width="170" height="116" rx="8" fill="#fffbeb" stroke="#d97706"/>
+    <text x="430" y="156" font-size="14" font-weight="600" fill="#78350f">3 · A person replies</text>
+    <text x="430" y="180">a comment with no</text>
+    <text x="430" y="198">"Agent name:" prefix</text>
+
+    <rect x="606" y="130" width="170" height="116" rx="8" fill="#fffbeb" stroke="#d97706"/>
+    <text x="622" y="156" font-size="14" font-weight="600" fill="#78350f">4 · The asker wakes</text>
+    <text x="622" y="180">its event trigger fires,</text>
+    <text x="622" y="198">and it reads the run</text>
+    <text x="622" y="216">its run: line names</text>
+
+    <rect x="798" y="130" width="170" height="116" rx="8" fill="#fffbeb" stroke="#d97706"/>
+    <text x="814" y="156" font-size="14" font-weight="600" fill="#78350f">5 · Acts and closes</text>
+    <text x="814" y="180">"Deploy Agent: done,</text>
+    <text x="814" y="198">health 200."</text>
+    <text x="814" y="216">then closes the issue</text>
+  </g>
+
+  <line x1="200" y1="188" x2="218" y2="188" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="392" y1="188" x2="410" y2="188" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="584" y1="188" x2="602" y2="188" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="776" y1="188" x2="794" y2="188" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="500" y="284" font-size="13" text-anchor="middle" fill="#334155">Between 2 and 4 the agent never waits: it does the rest of its job, and reads its open questions at the start of every run.</text>
+  <text x="500" y="308" font-size="13" text-anchor="middle" fill="#334155">One fingerprint, one issue, ever. A person closing the issue means: drop it, never ask again.</text>
+</svg>

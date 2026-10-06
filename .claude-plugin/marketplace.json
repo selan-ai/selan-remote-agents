@@ -1,0 +1,15 @@
+{
+  "name": "selan-remote-agents",
+  "description": "Run a team of autonomous Selan remote agents that keep a product healthy without a person watching: how to design each agent, wake it, hand work between agents, ask a person only what needs hands, and audit the fleet you already have.",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Selan",
+    "url": "https://selan.ai"
+  },
+  "plugins": [
+    {
+      "name": "selan-remote-agents",
+      "source": "./"
+    }
+  ]
+}
