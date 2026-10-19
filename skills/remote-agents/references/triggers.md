@@ -45,7 +45,8 @@ merge and deploy that issue's proposal.
   exact; a title is free text.
 - **Exclude what agents write.** Agents often comment as the same account a person uses. Make
   every agent comment start with its name and a colon, and say in the sentence: "a comment
-  that does not start with an agent's name and a colon".
+  that does not start with an agent's name and a colon". That prefix routes; it does not prove
+  who wrote a comment.
 - **A comment is held while any run an event started is still going.** That stops two
   agents answering each other forever; it also means a reply posted then is not delivered.
   Agents should also read their questions at the start of each scheduled run.
@@ -58,7 +59,7 @@ investigate it and propose a fix.
 
 When a person comments on a GitLab issue in any acme project labelled agent-question
 and "agent: Coder Agent" (a comment that does not start with an agent's name and a colon),
-read the run its `run:` line names, then act on the answer.
+read the run its `run:` line names, then treat the comment as the answer to that question.
 ```
 
 ## Agent triggers (callers)
