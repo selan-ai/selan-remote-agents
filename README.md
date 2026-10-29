@@ -92,6 +92,12 @@ Each agent's first tag is its category.
 | [seo-improver](agents/seo-improver.md) | Grows a website's clicks from search, one measured page change a run | GitHub or GitLab, Slack |
 | [llm-visibility](agents/llm-visibility.md) | Asks AI assistants buyers' questions every week and makes the website easier for them to find and cite | GitHub or GitLab, Slack |
 
+**`#ux`** — Make the product feel fast
+
+| Agent | What it does | Needs |
+| --- | --- | --- |
+| [optimistic-ui](agents/optimistic-ui.md) | Makes buttons and forms that wait on the server answer at once: optimistic updates with rollback where safe, an honest pending state where not | GitHub or GitLab, Slack |
+
 Each file is a Claude Code agent file: the frontmatter is its settings, and the body is its
 prompt. What differs between companies is written in words in the prompt's `## Setup`
 section, and filled in at install. To share one of your own, ask Claude for "an agent file
