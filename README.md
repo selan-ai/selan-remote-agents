@@ -39,6 +39,33 @@ one job, are a team — if each one is built to finish its work alone.
 
 ![When an agent needs a person](assets/question-loop.svg)
 
+## Agents to install
+
+Complete agents, one Markdown file each, in [`agents/`](agents/). Free to use and to adapt.
+With Selan's MCP server connected, paste one line into Claude Code:
+
+```
+Install https://github.com/selan-ai/selan-remote-agents/blob/main/agents/sentry-fixer.md
+```
+
+Claude reads the file, asks for what is yours (the repository, the Slack channel, the
+times), shows the agent it will create, and creates nothing until you say yes.
+
+| Agent | What it does | Needs |
+| --- | --- | --- |
+| [sentry-fixer](agents/sentry-fixer.md) | One merge request with a test per unresolved Sentry issue | GitHub or GitLab, Sentry, Slack |
+| [flake-hunter](agents/flake-hunter.md) | Fixes why the flakiest test is flaky, never with a retry | GitHub or GitLab, Slack |
+| [dead-code-cleaner](agents/dead-code-cleaner.md) | One small removal of unused code and dependencies a week | GitHub or GitLab, Slack |
+| [mr-watcher](agents/mr-watcher.md) | Nudges merge requests that wait on a person, fixes mechanical conflicts | GitHub or GitLab, Slack |
+| [css-cleaner](agents/css-cleaner.md) | Removes unused and duplicated CSS, folds repeated styles into shared components | GitHub or GitLab, Slack |
+| [dependency-updater](agents/dependency-updater.md) | Updates npm, yarn or pnpm packages only where it is safe | GitHub or GitLab, Slack |
+| [agents-md-updater](agents/agents-md-updater.md) | Keeps AGENTS.md true and short, by Selan's practices | GitHub or GitLab, Slack |
+
+Each file is a Claude Code agent file: the frontmatter is its settings, and the body is its
+prompt. What differs between companies is written in words in the prompt's `## Setup`
+section, and filled in at install. To share one of your own, ask Claude for "an agent file
+of my <agent>", then open a pull request adding it to `agents/`.
+
 ## What is inside
 
 ```
@@ -58,6 +85,7 @@ skills/remote-agents/
     safety.md              shipping, limits, and what no agent does
   examples/                complete agents: deploy, log watcher, coder, cleanup,
                            security, and a supervisor mission
+agents/                    agents to install, one file each
 ```
 
 The examples are adapted from a fleet that runs a real product. Names, channels and projects
