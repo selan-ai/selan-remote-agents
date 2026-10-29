@@ -62,6 +62,11 @@ times), shows the agent it will create, and creates nothing until you say yes.
 | [agents-md-updater](agents/agents-md-updater.md) | Keeps AGENTS.md true and short, by Selan's practices | GitHub or GitLab, Slack |
 | [package-publisher](agents/package-publisher.md) | Publishes a new version to npm, PyPI or crates.io when users would notice, then tags it and writes the release | GitHub or GitLab, Slack |
 | [unit-test-writer](agents/unit-test-writer.md) | Gives what was merged unit tests that fail if the change is reverted, one merge request a run | GitHub or GitLab, Slack |
+| [e2e-test-writer](agents/e2e-test-writer.md) | Plans end-to-end coverage of a whole repository and works toward 100%, a few endpoints or flows a run, against the real service and database | GitHub or GitLab, Slack |
+| [security-reviewer](agents/security-reviewer.md) | Reviews one area at a time and fixes real holes, each with an attacker, a path and a test that fails without the fix | GitHub or GitLab, Slack |
+| [prod-deployer](agents/prod-deployer.md) | Deploys to production when the pipeline, merged changes and staging logs are clean, then watches production and rolls back a deploy that raises errors | GitHub or GitLab, a logs connector, Slack |
+| [seo-improver](agents/seo-improver.md) | Grows a website's clicks from search, one measured page change a run | GitHub or GitLab, Slack |
+| [llm-visibility](agents/llm-visibility.md) | Asks AI assistants buyers' questions every week and makes the website easier for them to find and cite | GitHub or GitLab, Slack |
 
 Each file is a Claude Code agent file: the frontmatter is its settings, and the body is its
 prompt. What differs between companies is written in words in the prompt's `## Setup`
