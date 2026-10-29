@@ -60,6 +60,7 @@ times), shows the agent it will create, and creates nothing until you say yes.
 | [css-cleaner](agents/css-cleaner.md) | Removes unused and duplicated CSS, folds repeated styles into shared components | GitHub or GitLab, Slack |
 | [dependency-updater](agents/dependency-updater.md) | Updates npm, yarn or pnpm packages only where it is safe | GitHub or GitLab, Slack |
 | [agents-md-updater](agents/agents-md-updater.md) | Keeps AGENTS.md true and short, by Selan's practices | GitHub or GitLab, Slack |
+| [package-publisher](agents/package-publisher.md) | Publishes a new version to npm, PyPI or crates.io when users would notice, then tags it and writes the release | GitHub or GitLab, Slack |
 
 Each file is a Claude Code agent file: the frontmatter is its settings, and the body is its
 prompt. What differs between companies is written in words in the prompt's `## Setup`
