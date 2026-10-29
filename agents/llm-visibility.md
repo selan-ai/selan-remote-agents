@@ -4,7 +4,7 @@ description: Asks ChatGPT, Claude, Gemini and Perplexity the same buyer question
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [llm visibility, ai search, geo, website, growth]
+tags: [growth, llm visibility, ai search, geo, website]
 initialPrompt: Ask this week's questions, score the answers, and fix one thing the assistants read.
 ---
 ## Setup

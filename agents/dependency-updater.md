@@ -4,7 +4,7 @@ description: Updates npm, yarn or pnpm dependencies only where it is safe, known
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [dependencies, security, npm]
+tags: [maintainer, dependencies, security, npm]
 initialPrompt: Update what is vulnerable or behind, where it is safe.
 ---
 ## Setup

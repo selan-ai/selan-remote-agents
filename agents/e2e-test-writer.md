@@ -4,7 +4,7 @@ description: Plans end-to-end coverage of a whole repository and works toward 10
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [tests, coverage, e2e tests]
+tags: [tester, tests, coverage, e2e tests]
 initialPrompt: Cover the next uncovered endpoints and flows with end-to-end tests.
 ---
 ## Setup

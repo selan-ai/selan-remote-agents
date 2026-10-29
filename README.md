@@ -51,20 +51,44 @@ Install https://github.com/selan-ai/selan-remote-agents/blob/main/agents/sentry-
 Claude reads the file, asks for what is yours (the repository, the Slack channel, the
 times), shows the agent it will create, and creates nothing until you say yes.
 
+Each agent's first tag is its category.
+
+**`#maintainer`** — Keep the code healthy
+
 | Agent | What it does | Needs |
 | --- | --- | --- |
-| [sentry-fixer](agents/sentry-fixer.md) | One merge request with a test per unresolved Sentry issue | GitHub or GitLab, Sentry, Slack |
-| [flake-hunter](agents/flake-hunter.md) | Fixes why the flakiest test is flaky, never with a retry | GitHub or GitLab, Slack |
 | [dead-code-cleaner](agents/dead-code-cleaner.md) | One small removal of unused code and dependencies a week | GitHub or GitLab, Slack |
-| [mr-watcher](agents/mr-watcher.md) | Nudges merge requests that wait on a person, fixes mechanical conflicts | GitHub or GitLab, Slack |
 | [css-cleaner](agents/css-cleaner.md) | Removes unused and duplicated CSS, folds repeated styles into shared components | GitHub or GitLab, Slack |
 | [dependency-updater](agents/dependency-updater.md) | Updates npm, yarn or pnpm packages only where it is safe | GitHub or GitLab, Slack |
 | [agents-md-updater](agents/agents-md-updater.md) | Keeps AGENTS.md true and short, by Selan's practices | GitHub or GitLab, Slack |
-| [package-publisher](agents/package-publisher.md) | Publishes a new version to npm, PyPI or crates.io when users would notice, then tags it and writes the release | GitHub or GitLab, Slack |
+| [mr-watcher](agents/mr-watcher.md) | Nudges merge requests that wait on a person, fixes mechanical conflicts | GitHub or GitLab, Slack |
+
+**`#tester`** — Write and fix tests
+
+| Agent | What it does | Needs |
+| --- | --- | --- |
 | [unit-test-writer](agents/unit-test-writer.md) | Gives what was merged unit tests that fail if the change is reverted, one merge request a run | GitHub or GitLab, Slack |
 | [e2e-test-writer](agents/e2e-test-writer.md) | Plans end-to-end coverage of a whole repository and works toward 100%, a few endpoints or flows a run, against the real service and database | GitHub or GitLab, Slack |
-| [security-reviewer](agents/security-reviewer.md) | Reviews one area at a time and fixes real holes, each with an attacker, a path and a test that fails without the fix | GitHub or GitLab, Slack |
+| [flake-hunter](agents/flake-hunter.md) | Fixes why the flakiest test is flaky, never with a retry | GitHub or GitLab, Slack |
+
+**`#operator`** — Ship and run production
+
+| Agent | What it does | Needs |
+| --- | --- | --- |
 | [prod-deployer](agents/prod-deployer.md) | Deploys to production when the pipeline, merged changes and staging logs are clean, then watches production and rolls back a deploy that raises errors | GitHub or GitLab, a logs connector, Slack |
+| [package-publisher](agents/package-publisher.md) | Publishes a new version to npm, PyPI or crates.io when users would notice, then tags it and writes the release | GitHub or GitLab, Slack |
+| [sentry-fixer](agents/sentry-fixer.md) | One merge request with a test per unresolved Sentry issue | GitHub or GitLab, Sentry, Slack |
+
+**`#security`** — Find and fix security holes
+
+| Agent | What it does | Needs |
+| --- | --- | --- |
+| [security-reviewer](agents/security-reviewer.md) | Reviews one area at a time and fixes real holes, each with an attacker, a path and a test that fails without the fix | GitHub or GitLab, Slack |
+
+**`#growth`** — Grow the website
+
+| Agent | What it does | Needs |
+| --- | --- | --- |
 | [seo-improver](agents/seo-improver.md) | Grows a website's clicks from search, one measured page change a run | GitHub or GitLab, Slack |
 | [llm-visibility](agents/llm-visibility.md) | Asks AI assistants buyers' questions every week and makes the website easier for them to find and cite | GitHub or GitLab, Slack |
 

@@ -4,7 +4,7 @@ description: Keeps a repository's AGENTS.md true and short by Selan's practices,
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [docs, agents-md, practices]
+tags: [maintainer, docs, agents-md, practices]
 initialPrompt: Check AGENTS.md against the repository and fix what is wrong.
 ---
 ## Setup

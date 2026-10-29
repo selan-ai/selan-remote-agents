@@ -4,7 +4,7 @@ description: Drives the unresolved Sentry issues of one repository to zero, one 
 model: claude-opus-5-5
 effort: high
 mcpServers: [sentry, slack-bot]
-tags: [errors, sentry, bugfix]
+tags: [operator, errors, sentry, bugfix]
 initialPrompt: Work through the unresolved Sentry issues.
 ---
 ## Setup
