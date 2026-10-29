@@ -103,6 +103,27 @@ prompt. What differs between companies is written in words in the prompt's `## S
 section, and filled in at install. To share one of your own, ask Claude for "an agent file
 of my <agent>", then open a pull request adding it to `agents/`.
 
+## Groups to install
+
+A group is one goal and the agents for it, one Markdown file each in [`groups/`](groups/). Say
+the goal to Claude Code with Selan's MCP server connected, or paste the group's line:
+
+```
+Install https://github.com/selan-ai/selan-remote-agents/blob/main/groups/grow-test-coverage.md
+```
+
+Claude creates every agent in it, asking what they share (the repository, the Slack channel)
+once.
+
+| Group | Say | Agents |
+| --- | --- | --- |
+| [grow-test-coverage](groups/grow-test-coverage.md) | Create agents that grow my test coverage | e2e-test-writer, unit-test-writer, flake-hunter |
+| [maintain-and-deploy](groups/maintain-and-deploy.md) | Create agents that maintain and deploy this repo | dependency-updater, dead-code-cleaner, mr-watcher, sentry-fixer, prod-deployer |
+| [keep-app-secure](groups/keep-app-secure.md) | Create agents that keep my app secure | security-reviewer, dependency-updater |
+| [make-app-fast](groups/make-app-fast.md) | Create agents that make my app feel fast | optimistic-ui, css-cleaner |
+| [grow-website-traffic](groups/grow-website-traffic.md) | Create agents that grow my website traffic | seo-improver, llm-visibility |
+| [publish-open-source](groups/publish-open-source.md) | Create agents that publish my open-source package | package-publisher, unit-test-writer, dependency-updater, mr-watcher |
+
 ## What is inside
 
 ```
