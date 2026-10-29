@@ -4,7 +4,7 @@ description: Gives what was merged since its last run unit tests that fail if th
 model: claude-sonnet-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [tests, coverage, unit tests]
+tags: [tester, tests, coverage, unit tests]
 initialPrompt: Cover what was merged since your last run with unit tests.
 ---
 ## Setup

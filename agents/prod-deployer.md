@@ -4,7 +4,7 @@ description: Deploys a repository's default branch to production when its pipeli
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [deploy, production, rollback, logs, release]
+tags: [operator, deploy, production, rollback, logs, release]
 initialPrompt: Deploy to production if it is behind and all is clean, then watch it.
 ---
 ## Setup

@@ -4,7 +4,7 @@ description: Removes unused and duplicated CSS and folds repeated styles into sh
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [frontend, css, code-health]
+tags: [maintainer, frontend, css, code-health]
 initialPrompt: Clean up the styles of one area.
 ---
 ## Setup

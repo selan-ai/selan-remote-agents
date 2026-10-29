@@ -4,7 +4,7 @@ description: Finds the flakiest test in a repository's CI history and fixes why 
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [tests, ci, flaky]
+tags: [tester, tests, ci, flaky]
 initialPrompt: Find the flakiest test and fix its cause.
 ---
 ## Setup

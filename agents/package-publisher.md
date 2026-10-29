@@ -4,7 +4,7 @@ description: Publishes a new version of a package when its default branch has ch
 model: claude-sonnet-5-5
 effort: medium
 mcpServers: [slack-bot]
-tags: [release, publish, packages]
+tags: [operator, release, publish, packages]
 initialPrompt: Publish a new version if the default branch has changes worth one.
 ---
 ## Setup

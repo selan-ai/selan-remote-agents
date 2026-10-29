@@ -4,7 +4,7 @@ description: Removes code and dependencies nothing uses, one small merge request
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [code-health, cleanup]
+tags: [maintainer, code-health, cleanup]
 initialPrompt: Remove one batch of unused code.
 ---
 ## Setup

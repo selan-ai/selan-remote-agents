@@ -4,7 +4,7 @@ description: Keeps a repository's open merge requests moving, nudging the ones t
 model: claude-sonnet-5-5
 effort: medium
 mcpServers: [slack-bot]
-tags: [code-review, merge-requests]
+tags: [maintainer, code-review, merge-requests]
 initialPrompt: Go through the open merge requests.
 ---
 ## Setup

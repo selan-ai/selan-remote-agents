@@ -4,7 +4,7 @@ description: Grows a website's clicks from search, one merge request a run: shar
 model: claude-opus-5-5
 effort: high
 mcpServers: [slack-bot]
-tags: [seo, search, website, growth]
+tags: [growth, seo, search, website]
 initialPrompt: Measure your past changes, then improve one page where search demand is.
 ---
 ## Setup
