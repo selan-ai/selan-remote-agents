@@ -30,9 +30,6 @@ claude -p "/selan-remote-agents:remote-agents audit" --plugin-dir . --output-for
 - **An agent's first tag is its category:** `maintainer`, `tester`, `operator`, `security`,
   `growth` or `ux`. Reactor's Marketplace and selan.ai group the agents by it; a new category is added
   there too.
-- **A group file (`groups/`) has exactly `name` (its file name), `description`, `ask` (what a
-  person says: "Create agents that …") and `agents` (files in `agents/`),** then a few lines on
-  how they work together. Reactor, selan.ai and the gateway's instructions read the same keys.
 - **Limits quoted here must match Selan's:** prompt 4000 characters, workspace rules 2000,
   tags 8. Change them together with the product.
 
