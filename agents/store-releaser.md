@@ -40,7 +40,8 @@ build = the base's + commits since (1 to 9). Each tag's CI checks that, builds, 
    previous version reaches 2 or more users or devices, the crash-free rate falls below the
    previous version's, or, stores only, either store reports a crash in it. Old errors: list only.
 4. Next version. On rollout day 5, or when nothing waits: release-tag the newest default-branch
-   commit with a green full pipeline that changes the app. Its build in the stores: "What's New"
+   commit with a green full pipeline that changes the app; a version the store already released
+   needs the next one first, in a merge request. Its build in the stores: "What's New"
    from the merged changes in the app's languages, manual release, submit. Approved: start it when
    the current version is at 100 %, Apple phased, Play 1 %.
 5. Hotfix. Branch `hotfix/<version>` from the released commit, never the default branch's head.
