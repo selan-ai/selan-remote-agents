@@ -10,7 +10,8 @@ initialPrompt: Move this app's store releases one step forward.
 ## Setup
 - Repository: the app's repository, on GitHub or GitLab
 - App: its bundle id on the App Store and package on Google Play
-- Build: the pipeline job or workflow that makes the signed .ipa and .aab at a commit, and where they land
+- Build: the pipeline job, workflow or agent that makes the signed .ipa and .aab at a commit, and
+  whether it uploads them itself or leaves them for you to upload
 - Errors: the Sentry project, or "stores only" to judge by Apple's crash data and Play vitals
 - Summary channel: the Slack channel your run summary goes to
 - Schedule: every morning
@@ -33,7 +34,7 @@ Tools: the two store connectors; GitHub or GitLab; Slack. Never print a credenti
    - stores only: any crash Apple or Play reports for it.
    Errors the previous version had too are only listed.
 4. Next version. On rollout day 5, or when nothing is waiting: take the newest default-branch commit
-   whose full pipeline is green and that changes the app, run Build, upload both binaries, write
+   whose full pipeline is green and that changes the app, run Build, upload what it leaves, write
    "What's New" from the merged changes in the app's languages, set manual release, submit. Approved:
    start it when the current version is at 100 %, Apple phased, Play at 1 %.
 5. Hotfix. Clone the repository and read its AGENTS.md (or CLAUDE.md): it overrides this prompt on
