@@ -78,6 +78,7 @@ Each agent's first tag is its category.
 | [prod-deployer](agents/prod-deployer.md) | Deploys to production when the pipeline, merged changes and staging logs are clean, then watches production and rolls back a deploy that raises errors | GitHub or GitLab, a logs connector, Slack |
 | [package-publisher](agents/package-publisher.md) | Publishes a new version to npm, PyPI or crates.io when users would notice, then tags it and writes the release | GitHub or GitLab, Slack |
 | [sentry-fixer](agents/sentry-fixer.md) | One merge request with a test per unresolved Sentry issue | GitHub or GitLab, Sentry, Slack |
+| [store-releaser](agents/store-releaser.md) | Ships a mobile app to the App Store and Google Play by itself: 7-day staged rollouts, a halt on new errors, its own hotfix | GitHub or GitLab, App Store Connect, Google Play, Slack |
 
 **`#security`** — Find and fix security holes
 
