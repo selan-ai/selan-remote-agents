@@ -28,8 +28,6 @@ The release flow: tag `v<version>-<build>` on a default-branch commit, build = i
 x 10; `hotfix-v<version>-<build>` on `hotfix/<version>`, cut from a tagged commit, patch + 1,
 build = the base's + commits since (1 to 9). Each tag's CI checks that, builds, signs, uploads
 (TestFlight internal group, Play internal track), waits until processed. Notes: the tag message.
-A nightly schedule does the same, untagged, for the default branch's head when the app changed
-since the newest upload; a tag on a commit already built only waits.
 
 0. None yet: clone the repository, read its AGENTS.md (or CLAUDE.md: it overrides this prompt on
    building and testing) and CI, open one merge request adding the release flow and its
