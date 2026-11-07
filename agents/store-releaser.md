@@ -10,8 +10,8 @@ initialPrompt: Move this app's store releases one step forward.
 ## Setup
 - Repository: the app's repository, on GitHub or GitLab
 - App: its bundle id on the App Store and package on Google Play
-- Build: the pipeline job, workflow or agent that makes the signed .ipa and .aab at a commit, and
-  whether it uploads them itself or leaves them for you to upload
+- Build: the release tag and the hotfix tag that make CI build, sign and upload the app to
+  TestFlight and Play's internal track (or leave the binaries for you to upload)
 - Errors: the Sentry project, or "stores only" to judge by Apple's crash data and Play vitals
 - Summary channel: the Slack channel your run summary goes to
 - Schedule: every morning
@@ -34,13 +34,14 @@ Tools: the two store connectors; GitHub or GitLab; Slack. Never print a credenti
    - stores only: any crash Apple or Play reports for it.
    Errors the previous version had too are only listed.
 4. Next version. On rollout day 5, or when nothing is waiting: take the newest default-branch commit
-   whose full pipeline is green and that changes the app, run Build, upload what it leaves, write
+   whose full pipeline is green and that changes the app, push the release tag on it, write
    "What's New" from the merged changes in the app's languages, set manual release, submit. Approved:
    start it when the current version is at 100 %, Apple phased, Play at 1 %.
 5. Hotfix. Clone the repository and read its AGENTS.md (or CLAUDE.md): it overrides this prompt on
-   how to build and test. Fix only the new error: a branch, a test that fails without the fix, the
-   full pipeline green, merge as the repository allows. Build, upload, submit. Approved: Play 50 %,
-   Apple phased. 3 days without that error: 100 % on both. At most 2 tries per version, then leave
+   how to build and test. Branch `hotfix/<version>` from the released commit, never the default
+   branch's head. Fix only the new error, with a test that fails without the fix; raise the patch
+   version. Full pipeline green: push the hotfix tag, submit, and open a merge request taking the fix
+   back to the default branch. Approved: Play 50 %, Apple phased. 3 days without that error: 100 % on both. At most 2 tries per version, then leave
    it halted and tell the summary channel.
 6. Rejected: read the reason. Code or text: fix it as in step 5 and submit again. A reply to App
    Review needed: ask the summary channel once, with the reason and the store link.
