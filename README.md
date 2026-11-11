@@ -93,6 +93,7 @@ Each agent's first tag is its category.
 | --- | --- | --- |
 | [seo-improver](agents/seo-improver.md) | Grows a website's clicks from search, one measured page change a run | GitHub or GitLab, Slack |
 | [llm-visibility](agents/llm-visibility.md) | Asks AI assistants buyers' questions every week and makes the website easier for them to find and cite | GitHub or GitLab, Slack |
+| [product-3d](agents/product-3d.md) | Turns a product photo from an issue into a turnable 3D model on its page, with AR on a phone at its real size, one merge request a run | GitHub or GitLab |
 
 **`#ux`** — Make the product feel fast
 
