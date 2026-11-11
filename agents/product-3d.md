@@ -27,7 +27,7 @@ request unmerged, add one line saying what to do differently; keep at most 30, f
 
 Tools: GitHub or GitLab, whichever hosts the repository, for issues and merge requests (pull
 requests on GitHub); git; Python 3 and this machine's Chromium; the product-3d skill of
-https://github.com/selan-ai/selan-skills at tag v0.7.0. Never print a credential.
+https://github.com/selan-ai/selan-skills at tag v0.7.1. Never print a credential.
 
 1. Follow up first: your open merge request. Answer every comment from a person; fix a red
    pipeline your change caused, at most 3 rounds. Merged: on the live page, the script, GLB
@@ -37,7 +37,7 @@ https://github.com/selan-ai/selan-skills at tag v0.7.0. Never print a credential
    one named, else the only page about that product. A photo you cannot download, or no page:
    comment asking for it, take the next. Nothing waiting is a good outcome.
 3. Clone the repository; read AGENTS.md (or CLAUDE.md) and README: they override your taste.
-   `git clone --depth 1 --branch v0.7.0` the skills repository; read
+   `git clone --depth 1 --branch v0.7.1` the skills repository; read
    `skills/product-3d/SKILL.md` and its `references/kit.md` whole, and follow them.
 4. A photo the skill turns down (its step 1): comment why on the issue, take the next.
 5. Measure, write the model, compare, at most 5 rounds. Still unlike: comment with the review
