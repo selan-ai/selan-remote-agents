@@ -11,7 +11,8 @@ needs hands — and audit the agents you already have.
 ```
 
 Then ask for what you need — *"design an agent that watches our prod logs"*, *"audit my
-remote agents"* — or run `/selan-remote-agents:remote-agents`. Auditing reads your agents
+remote agents"* — or run `/selan-remote-agents:remote-agents`. To run agents on a machine of your
+own, ask *"set up this server as a runner"* or run `/selan-remote-agents:runners`. Auditing reads your agents
 through the Selan MCP server, so connect it first; it changes nothing.
 
 ![A fleet of Selan remote agents](assets/fleet.svg)
@@ -125,6 +126,9 @@ skills/remote-agents/
     safety.md              shipping, limits, and what no agent does
   examples/                complete agents: deploy, log watcher, coder, cleanup,
                            security, and a supervisor mission
+skills/runners/
+  SKILL.md                 a machine of your own as a runner: add it, the install line
+                           per machine, slots, the checks, moving agents onto it, removing it
 agents/                    agents to install, one file each
 ```
 
